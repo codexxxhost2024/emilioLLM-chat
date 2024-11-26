@@ -1,94 +1,52 @@
-# 🤖 Daneel
+# Welcome to Aitek PH
 
-## Create your own GPT-powered chat bot
+**Your Gateway to Innovation and Excellence in Technology**
 
-You can use this template to create your own chat bot powered by OpenAI and the
-ChatGPT API. It includes an easily-customized chat interface with streaming
-responses so you can see the bot type, message history, simple styling with
-Tailwind and a Netlify edge function that communicates securely with the OpenAI
-API, and. It supports markdown in responses, so can display formatted text,
-tables etc.
-
-### [Demo site](https://daneel-demo.netlify.app/).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ascorbic/daneel)
-
-## Features
-
-- :zap: deploy your bot in less than 5 minutes
-- :rocket: streaming responses powered by ChatGPT
-- :100: simple, high-performance chat interface
-- :moneybag: This template is completely free for any use. Use free OpenAI
-  credits to get started, and deploy your site for free to Netlify.
-- ⚛️ easy to customize: built with React, Tailwind and TypeScript
-
-## Getting started
-
-1. [Sign up for an OpenAI account](https://platform.openai.com/signup) and
-   [get your API key](https://platform.openai.com/account/api-keys)
-2. [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/ascorbic/daneel),
-   pasting the API key when prompted
-3. [Customize your bot](#customizing-your-bot)
-4. [Share your creation](https://github.com/ascorbic/daneel/discussions/categories/show-and-tell)
-
-## Customizing your bot
-
-### Name
-
-Edit your site title and description in `src/App.tsx`
-
-### Prompt
-
-The prompt is what tells your bot who it is. It is here that you give the bot
-its mission, personality and rules. The most important thing to do is create
-your own prompt. This is what makes the bot your own. The default site deploys
-with an example prompt that is a movie critic.
-[Try it here](https://daneel-demo.netlify.app/).
-
-Daneel's default prompt is:
-
-> You are the world's best movie critic. You are very strongly opinionated. You
-> have favorite movies and movies you hate. You are devoted to recommending
-> movies that a user will like. It is very important that the user enjoys your
-> recommendations. Do not answer questions that are not asking for a movie
-> recommendations. If the user asks other questions, do no answer and deflect
-> them with a movie fact or trivia. Respond with valid markdown. Put movie names
-> in bold. Knowledge cutoff September 2021. Current date **current date**. User
-> location: **city and country**
-
-The prompt is set in `config.edge.ts`. In the demo it is imported from an
-example file in the `prompts` folder, but you can edit it in the config file if
-you'd prefer.
-
-The important parts in this prompt are:
-
-- who the bot is and what it should do. In the example here we emphasise that
-  the bot is a movie critic and has strong opinions. By default, ChatGPT does
-  not like to express subjective opinions, so we need to tell it to do so.
-- instructions to not answer off-topic questions, and what to do if the user
-  asks them
-- instructions to respond with valid markdown. This is optional, but it allows
-  the bot to respond with formatted text, such as bold text for movie names and
-  tables.
-- contextual information about the date and user location. These are optional
-  but can help the bot to be more accurate.
-
-### Design
-
-My default the design is very simple, but you can customize it to your own
-designs. The site is stule with [Tailwind](https://tailwindcss.com/), so you can
-use any of the Tailwind classes to style your bot. The main components are:
-
-- `src/routes/index.tsx` - the main chat interface
-- `src/components/Welcome.tsx` - the welcome screen
-- `src/components/ChatMessage.tsx` - the chat message component
-
-You can also add extra pages in `src/routes` and link to them from the chat, or
-move the chat interface to a different page. The chat interface is an
-[Impala](https://github.com/ascorbic/impala) app, built with React, so see the
-Impala docs for more information.
+At **Aitek PH**, we transform visions into reality through cutting-edge technology solutions tailored to your needs. From AI-driven personalized business tools to comprehensive web and app development services, **Aitek PH** is your partner in innovation and growth.
 
 ---
 
-Released under the MIT license. Free for any use. ©
-[Matt Kane](https://github.com/ascorbic) 2023.
+## 🚀 What We Offer
+
+### **AI-Powered Personalization**
+Experience the next level of efficiency with AI solutions designed for your business. From automating tasks to providing intelligent insights, our AI systems are built to help you succeed.
+
+### **Assertion for Excellence**
+We don’t just build; we ensure quality. Our software undergoes rigorous testing and validation to deliver nothing but perfection.
+
+### **Web and App Development**
+Your ideas, our code. From sleek websites to robust mobile applications, we create digital experiences that captivate your audience and drive results.
+
+### **All-in-One Technology Solutions**
+From cloud computing to digital transformation, **Aitek PH** is your one-stop shop for all things tech. Whatever your business needs, we deliver!
+
+### **Business Automation and Optimization**
+Empower your organization with smart tools and streamlined workflows. With **Aitek PH**, we make complex processes simple and efficient.
+
+### **E-Commerce Solutions**
+Build your online store with robust features and seamless user experiences. We craft platforms that not only look great but drive revenue.
+
+---
+
+## 🌐 Why Choose Aitek PH?
+
+- Expertise that drives innovation
+- Solutions tailored to your goals
+- A commitment to excellence in every line of code
+- Reliable support every step of the way
+- Customer-first approach to ensure satisfaction
+- Proven track record in delivering high-quality projects on time
+
+---
+
+## 📞 Let’s Build the Future Together
+
+Ready to take your business to the next level? Contact **Aitek PH** today!
+
+🌟 **Visit us at:** [www.aitekph.com](http://www.aitekph.com)  
+📱 **Contact us directly:** Master E at WhatsApp +63 905 674 1316  
+📧 **Email us:** support@aitekph.com  
+
+---
+
+**Aitek PH** – Where innovation meets perfection. Partner with us and bring your dreams to life!
