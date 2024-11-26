@@ -8,7 +8,7 @@ export const appConfig: AppConfig = {
   // See https://platform.openai.com/account/api-keys
   OPENAI_API_KEY: Netlify.env.get("OPENAI_API_KEY") ?? "",
 
-  // The maximum number of message in the history to send to the API
+  // The maximum number of messages in the history to send to the API
   // You should also set this in the config.browser.ts file.
   historyLength: 8,
 
@@ -19,14 +19,13 @@ export const appConfig: AppConfig = {
   // The config values sent to the OpenAI API
   // See https://platform.openai.com/docs/api-reference/chat/create
   apiConfig: {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
   },
 
   // This is where the magic happens. See the README for details
   // This can be a plain string if you'd prefer, or you can use
   // information from the request or context to generate it.
   systemPrompt: (_req, context) => `${prompt}
-Respond with valid markdown. Knowledge cutoff September 2021.
-Current date: ${new Date().toDateString()}.
-User location: ${context.geo.city}, ${context.geo.country}`,
+Respond with valid markdown. User location: ${context.geo.city}, ${context.geo.country}.
+Current date: ${new Date().toDateString()}.`,
 };
